@@ -54,14 +54,14 @@ Follow these instructions to set up and run the project on your local machine.
 ### Prerequisites
 
 -   Python 3.8+
--   `pip` and `git`
+-   `pip` and `git` or use 'google collab'
 -   An **NVIDIA GPU** with CUDA installed is strongly recommended for performance.
 
 ### Installation
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/your-username/ai-art-generator.git](https://github.com/your-username/ai-art-generator.git)
+    git clone https://github.com/Kartik-Limbachiya/AI_Art_Generator.git
     cd ai-art-generator
     ```
 
