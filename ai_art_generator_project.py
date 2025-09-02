@@ -754,28 +754,3 @@ if __name__ == "__main__":
     if os.path.exists("comparison.png"):
         print("   📊 comparison.png - Side-by-side comparison")
     print("=" * 60)
-
-!git init
-!git remote add origin https://github.com/Kartik-Limbachiya/AI_Art_Generator.git
-
-!git add .
-!git commit -m "Initial commit: AI Prompt Enhancer + Stable Diffusion + Neural Style Transfer"
-!git branch -M main
-!git push -u origin main
-
-import os
-from google.colab import userdata
-
-# Retrieve the GitHub token from Colab secrets
-# Make sure you have added a secret named 'GH_TOKEN' in the Colab secrets panel
-github_token = userdata.get('GH_TOKEN')
-
-if github_token:
-    # Use the token with the git push command
-    # This format includes the token in the URL (use HTTPS)
-    repo_url = f"https://{github_token}@github.com/Kartik-Limbachiya/AI_Art_Generator.git"
-    print("Attempting to push using token...")
-    !git push -u {repo_url} main
-else:
-    print("GitHub token not found in Colab secrets. Please add it.")
-    print("Go to 🔑 > Add new secret > Name: GH_TOKEN, Value: <Your GitHub Token>")
